@@ -52,24 +52,42 @@
         };
     };
 
+    macros {
+        ru_layout: ru_layout {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(SPACE)>, <&macro_wait_time 20>, <&to 1>;
+
+            label = "RU_LAYOUT";
+        };
+
+        en_layout: en_layout {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(SPACE)>, <&macro_wait_time 20>, <&to 0>;
+
+            label = "EN_LAYOUT";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         base {
             bindings = <
-  &kp Q        &lt 4 W       &lt 3 F      &lt 2 P       &kp B                          &kp J      &lt 2 L       &lt 3 U      &kp Y         &kp EQUAL
-  &hml LALT A  &hml LCTRL R  &hml LCMD S  &hml LSHFT T  &kp G                          &kp M      &hmr LSHFT N  &hmr LGUI E  &hmr LCTRL I  &kp O
-  &kp X        &kp C         &kp D        &kp V         &kp Z                          &kp K      &kp H         &kp COMMA    &kp DOT       &kp APOS
-                                          &kp ENTER     &kp TAB  &kp ESC    &kp SPACE  &kp SPACE  &kp BSPC
+  &kp Q        &lt 4 W       &lt 3 F      &lt 2 P       &kp B                           &kp J      &lt 2 L       &lt 3 U      &kp Y         &kp EQUAL
+  &hml LALT A  &hml LCTRL R  &hml LCMD S  &hml LSHFT T  &kp G                           &kp M      &hmr LSHFT N  &hmr LGUI E  &hmr LCTRL I  &kp O
+  &kp X        &kp C         &kp D        &kp V         &kp Z                           &kp K      &kp H         &kp COMMA    &kp DOT       &kp APOS
+                                          &kp ENTER     &kp TAB  &kp ESC    &ru_layout  &kp SPACE  &kp BSPC
             >;
         };
 
         ru {
             bindings = <
-  &kp Q        &lt 4 W       &lt 3 E      &lt 2 R       &kp T                          &kp Y      &lt 2 U       &lt 3 I      &kp O         &kp P
-  &hml LALT A  &hml LCTRL S  &hml LCMD D  &hml LSHFT F  &kp G                          &kp H      &hmr LSHFT J  &hmr LGUI K  &hmr LCTRL L  &kp SEMICOLON
-  &kp Z        &kp X         &kp C        &kp V         &kp B                          &kp N      &kp M         &kp COMMA    &kp DOT       &kp SQT
-                                          &kp ENTER     &kp TAB  &kp ESC    &kp SPACE  &kp SPACE  &kp BSPC
+  &kp Q        &lt 4 W       &lt 3 E      &lt 2 R       &kp T                           &kp Y      &lt 2 U       &lt 3 I      &kp O         &kp P
+  &hml LALT A  &hml LCTRL S  &hml LCMD D  &hml LSHFT F  &kp G                           &kp H      &hmr LSHFT J  &hmr LGUI K  &hmr LCTRL L  &kp SEMICOLON
+  &kp Z        &kp X         &kp C        &kp V         &kp B                           &kp N      &kp M         &kp COMMA    &kp DOT       &kp SQT
+                                          &kp ENTER     &kp TAB  &kp ESC    &en_layout  &kp SPACE  &kp BSPC
             >;
         };
 
