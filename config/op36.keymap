@@ -105,10 +105,10 @@
 
         base {
             bindings = <
-  &kp Q        &lt 4 W       &lt 3 F      &lt 2 P       &kp B                           &kp J      &lt 2 L       &lt 3 U      &kp Y         &kp EQUAL
-  &hml LALT A  &hml LCTRL R  &hml LCMD S  &hml LSHFT T  &kp G                           &kp M      &hmr LSHFT N  &hmr LGUI E  &hmr LCTRL I  &kp O
-  &kp X        &kp C         &kp D        &kp V         &kp Z                           &kp K      &kp H         &kp COMMA    &kp DOT       &kp APOS
-                                          &kp ENTER     &kp TAB  &kp ESC    &ru_layout  &kp SPACE  &kp BSPC
+  &kp Q        &lt 4 W       &lt 3 F      &lt 2 P       &kp B                                 &kp J      &lt 2 L       &lt 3 U      &kp Y         &mt LG(QUESTION) EQUAL
+  &hml LALT A  &hml LCTRL R  &hml LCMD S  &hml LSHFT T  &kp G                                 &kp M      &hmr LSHFT N  &hmr LGUI E  &hmr LCTRL I  &kp O
+  &kp X        &kp C         &kp D        &kp V         &kp Z                                 &kp K      &kp H         &kp COMMA    &kp DOT       &kp APOS
+                                          &kp ENTER     &mt SPACE TAB  &kp ESC    &ru_layout  &kp SPACE  &kp BSPC
             >;
         };
 
