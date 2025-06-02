@@ -134,7 +134,7 @@
             bindings = <
   &none  &kp HASH      &kp COLON      &kp AT_SIGN  &kp AMPERSAND                    &kp BACKSLASH  &kp LEFT_PARENTHESIS  &kp UNDER  &kp RIGHT_PARENTHESIS  &none
   &none  &kp ASTERISK  &kp SEMICOLON  &kp PERCENT  &kp SQT                          &kp PIPE       &kp LEFT_BRACKET      &kp MINUS  &kp RIGHT_BRACKET      &kp EXCLAMATION
-  &none  &kp LCTRL     &kp GRAVE      &kp DOLLAR   &none                            &kp SLASH      &kp LEFT_BRACE        &kp TILDE  &kp RIGHT_BRACE        &kp QUESTION
+  &none  &kp CARET     &kp GRAVE      &kp DOLLAR   &none                            &kp SLASH      &kp LEFT_BRACE        &kp TILDE  &kp RIGHT_BRACE        &kp QUESTION
                                       &kp ENTER    &kp TAB        &trans    &trans  &kp SPACE      &kp BSPC
             >;
         };
